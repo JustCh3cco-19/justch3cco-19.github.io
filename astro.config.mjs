@@ -7,4 +7,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  site: 'https://justch3cco-19.github.io',
+  base: '/justch3cco-19.github.io',
 });
