@@ -1,6 +1,6 @@
 export const siteConfig = {
   name: "Francesco Zompanti",
-  title: "Software Engineer & Computer Science Student",
+  title: "Software Engineer & Computer Science",
   description: "Portfolio website of Francesco Zompanti",
   accentColor: "#d81d1dff",
   social: {
