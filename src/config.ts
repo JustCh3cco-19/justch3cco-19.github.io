@@ -37,13 +37,37 @@ export const siteConfig = {
   experience: [
     {
       company: "Sapienza Fast Charge Formula Student Electric Team",
-      title: "Software Engineer",
-      dateRange: "Dec 2023 - Present",
+      title: "ADAS Software Engineer",
+      dateRange: "Oct 2023 - Oct 2024",
       bullets: [
         "Software development for a self‑driving car competing in the Formula Student championship",
         "Designed and developed ROS2‑based modular architectures for distributed control of autonomous vehicle subsystems",
         "Developed real‑time solutions with strong focus on performance optimization and hardware compatibility",
         "Deployment and validation on NVIDIA Jetson AGX Orin, balancing computational load, communication, and safety requirements",
+      ],
+    },
+    {
+      company: "Sapienza Fast Charge Formula Student Electric Team",
+      title: "ADAS Technical Responsible",
+      dateRange: "Oct 2023 - Present",
+      bullets: [
+        "Responsible of High-Level-Control and Telemetry of the autonomous car"
+      ],
+    },
+    {
+      company: "Sapienza Fast Charge Formula Student Electric Team",
+      title: "Social Media Manager",
+      dateRange: "Sep 2025 - Present",
+      bullets: [
+        ""
+      ],
+    },
+    {
+      company: "Sapienza Fast Charge Formula Student Electric Team",
+      title: "Head of Business & Management",
+      dateRange: "Sep 2025 - Present",
+      bullets: [
+        ""
       ],
     },
   ],
