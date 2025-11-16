@@ -59,7 +59,7 @@ export const siteConfig = {
       title: "Social Media Manager",
       dateRange: "Sep 2025 - Present",
       bullets: [
-        ""
+        //""
       ],
     },
     {
@@ -67,7 +67,7 @@ export const siteConfig = {
       title: "Head of Business & Management",
       dateRange: "Sep 2025 - Present",
       bullets: [
-        ""
+        //""
       ],
     },
   ],
