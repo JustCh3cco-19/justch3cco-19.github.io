@@ -1,10 +1,17 @@
 name: Deploy to GitHub Pages
 
 on:
-    # Trigger the workflow every time you push to the `main` branch
-    # Using a different branch name? Replace `main` with your branch’s name
+    # Build and deploy only when files affecting the site change on `main`.
     push:
         branches: [main]
+        paths:
+            - "src/**"
+            - "public/**"
+            - "astro.config.mjs"
+            - "tsconfig.json"
+            - "package.json"
+            - "package-lock.json"
+            - ".github/workflows/deploy.yml"
     # Allows you to run this workflow manually from the Actions tab on GitHub.
     workflow_dispatch:
 

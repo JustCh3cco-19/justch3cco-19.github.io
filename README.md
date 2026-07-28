@@ -1,16 +1,79 @@
-# Francesco Zompanti - Personal Portfolio
+# Francesco Zompanti – Personal Portfolio
 
-This site is the place where I weave together two journeys that rarely meet in one notebook: motorsport engineering and software development. I did not want another list of repositories, I wanted to explain my professional life and how Computer Science studies meets motorsport.
+Welcome to my personal portfolio.
 
-## What I want to share
-- How my role in the Formula Student team's ADAS group evolved, and the technical hurdles we face when turning a race car into a driverless platform.
-- The skills I am growing.
+This website showcases my journey as a Software Engineer, combining professional experience in embedded systems and industrial software with my passion for autonomous vehicles, artificial intelligence, and motorsport engineering.
 
-## An invitation to collaborate
-This portfolio exists to open my work to the outside: share documentation, gather feedback, and meet people who care about AI, embedded systems, and racing. Each section is designed to spark conversations about safe software architectures, validation pipelines, and experimentation on the track.
+Here you'll find the projects, technologies, and experiences that have shaped my career—from developing embedded software and automated testing tools for battery systems to building AI-powered computer vision applications and contributing to an autonomous Formula Student race car.
 
-## Why make it public
-Putting this story in the open forces me to be clear about goals, results, and lessons learned. It keeps me accountable, helps me grow as an engineer, and documents the team's progress with transparency.
+---
 
-## Continuous evolution
-The repository will keep changing: new projects, race retrospectives, technical articles, and reflections on the trade-offs between performance and safety. If you want to follow the evolution or contribute ideas, check the contact details wired into `src/config.ts` and the links published on the site.
+## What You'll Find
+
+### Professional Experience
+
+My work spans several areas of software engineering, including:
+
+* Embedded software development in C and Python
+* Battery testing and CAN-based diagnostic systems
+* Industrial automation and production software
+* Custom ERP development with Odoo
+* Linux infrastructure, Docker, and development workflows
+
+Alongside my professional career, I serve as the **ADAS Technical Responsible** of the **Sapienza Fast Charge Formula Student Electric Team**, leading the development of the Telemetry software for an autonomous Formula Student race car.
+
+---
+
+## Featured Projects
+
+This portfolio includes personal, academic, and professional-oriented projects covering:
+
+* Embedded Systems
+* Artificial Intelligence
+* Computer Vision
+* Autonomous Systems
+* Operating Systems
+* Distributed Systems
+* Networking
+* Optimization Algorithms
+* Web Applications
+
+Each project highlights the technologies used, the engineering challenges faced, and the solutions implemented.
+
+---
+
+## Technologies
+
+Some of the technologies I work with include:
+
+* C / C++
+* Python
+* Linux
+* ROS 2
+* Docker
+* Git
+* CAN Bus
+* OpenCV
+* YOLO
+* MATLAB & Simulink
+* Odoo
+
+---
+
+## Purpose
+
+This portfolio is more than a collection of repositories.
+
+It documents my growth as an engineer, demonstrates how I approach technical challenges, and showcases the software solutions I've built across embedded systems, artificial intelligence, industrial automation, and autonomous vehicles.
+
+I believe software engineering is about solving real-world problems through reliable, maintainable, and efficient systems.
+
+---
+
+## Continuous Evolution
+
+Technology evolves quickly—and so does this portfolio.
+
+New projects, technical articles, engineering insights, and Formula Student developments will continue to be added over time as I explore new technologies and take on new challenges.
+
+Feel free to explore the projects, connect with me on LinkedIn, or reach out if you'd like to collaborate.
