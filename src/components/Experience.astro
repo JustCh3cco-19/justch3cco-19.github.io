@@ -44,7 +44,14 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
                           class="text-base sm:text-lg"
                           style={`color: ${siteConfig.accentColor}`}
                         >
-                          {exp.company}
+                          <a
+                            href={exp.company.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="hover:underline focus-visible:underline"
+                          >
+                            {exp.company.name}
+                          </a>
                         </p>
                       </div>
                       <span class="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-0">

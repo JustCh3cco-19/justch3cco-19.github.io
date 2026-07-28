@@ -1,3 +1,14 @@
+const companies = {
+  fastChargeEngineering: {
+    name: "Fast Charge Engineering",
+    url: "https://fceitalia.it",
+  },
+  sapienzaFastCharge: {
+    name: "Sapienza Fast Charge Formula Student Electric Team",
+    url: "https://sapienzafastcharge.it",
+  },
+};
+
 export const siteConfig = {
   name: "Francesco Zompanti",
 
@@ -116,7 +127,7 @@ export const siteConfig = {
 
   experience: [
     {
-      company: "Fast Charge Engineering",
+      company: companies.fastChargeEngineering,
       title: "Software Engineer",
       dateRange: "Mar 2026 - Present",
       bullets: [
@@ -128,7 +139,7 @@ export const siteConfig = {
       ],
     },
     {
-      company: "Sapienza Fast Charge Formula Student Electric Team",
+      company: companies.sapienzaFastCharge,
       title: "Head of Business & Management",
       dateRange: "Sep 2025 - Present",
       bullets: [
@@ -138,7 +149,7 @@ export const siteConfig = {
       ],
     },
     {
-      company: "Sapienza Fast Charge Formula Student Electric Team",
+      company: companies.sapienzaFastCharge,
       title: "Social Media Manager",
       dateRange: "Sep 2025 - Present",
       bullets: [
@@ -148,7 +159,7 @@ export const siteConfig = {
       ],
     },
     {
-      company: "Sapienza Fast Charge Formula Student Electric Team",
+      company: companies.sapienzaFastCharge,
       title: "ADAS Technical Responsible",
       dateRange: "Oct 2024 - Present",
       bullets: [
@@ -159,7 +170,7 @@ export const siteConfig = {
       ],
     },
     {
-      company: "Sapienza Fast Charge Formula Student Electric Team",
+      company: companies.sapienzaFastCharge,
       title: "ADAS Software Engineer",
       dateRange: "Oct 2023 - Oct 2024",
       bullets: [
