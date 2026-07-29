@@ -163,7 +163,7 @@ export const siteConfig = {
       title: "ADAS Technical Responsible",
       dateRange: "Oct 2024 - Present",
       bullets: [
-        "Lead the development of the High-Level Control and Telemetry subsystems for an autonomous Formula Student race car.",
+        "Lead the development of the Software Architecture and Telemetry subsystems for an autonomous Formula Student race car.",
         "Coordinate software architecture decisions and technical planning within the ADAS division.",
         "Supervise the integration, testing, and validation of autonomous driving software components.",
         "Mentor team members and promote the development of reliable, maintainable, and hardware-compatible software.",
