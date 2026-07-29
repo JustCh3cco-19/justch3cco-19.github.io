@@ -26,7 +26,7 @@ export const siteConfig = {
   },
 
   aboutMe:
-    "Software Engineer passionate about embedded systems, autonomous vehicles, artificial intelligence, and industrial software development. I currently work at Fast Charge Engineering, where I develop embedded software, automated testing solutions, CAN-based diagnostic tools, and custom ERP applications. I am also the ADAS Technical Responsible of the Sapienza Fast Charge Formula Student Electric Team, leading the development of High-Level Control and Telemetry software for an autonomous Formula Student race car. Alongside my professional experience, I am pursuing a Bachelor's degree in Computer Science at Sapienza University of Rome. I enjoy designing reliable, efficient software that bridges hardware, data, and real-world applications.",
+    "Software Engineer passionate about embedded systems, autonomous vehicles, artificial intelligence, and industrial software development. I currently work at Fast Charge Engineering, where I develop embedded software, automated testing solutions, CAN-based diagnostic tools, and custom ERP applications. I am also the ADAS Technical Responsible of the Sapienza Fast Charge Formula Student Electric Team, leading the development of Software Architecture and Telemetry software for an autonomous Formula Student race car. Alongside my professional experience, I am pursuing a Bachelor's degree in Computer Science at Sapienza University of Rome. I enjoy designing reliable, efficient software that bridges hardware, data, and real-world applications.",
 
   skills: [
     "C",
