@@ -31,6 +31,7 @@ export const siteConfig = {
   skills: [
     "C",
     "C++",
+    "CUDA",
     "Python",
     "Bash",
     "MATLAB",
@@ -66,7 +67,8 @@ export const siteConfig = {
         "Implemented optimization algorithms to solve the Vehicle Routing Problem (VRP), focusing on efficient route planning and resource allocation under operational constraints.",
       link: "https://github.com/JustCh3cco-19/VehicleRoutingProblem",
       skills: [
-        "Python",
+        "C",
+        "CUDA",
         "Optimization",
         "Algorithms",
         "Operations Research",
