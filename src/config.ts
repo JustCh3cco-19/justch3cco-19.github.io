@@ -153,7 +153,7 @@ export const siteConfig = {
     {
       company: companies.sapienzaFastCharge,
       title: "Social Media Manager",
-      dateRange: "Sep 2025 - Present",
+      dateRange: "Sep 2025 - Sep 2026",
       bullets: [
         "Define and execute the team's communication strategy across multiple social media platforms.",
         "Create technical and promotional content highlighting engineering achievements and competition activities.",
@@ -163,7 +163,7 @@ export const siteConfig = {
     {
       company: companies.sapienzaFastCharge,
       title: "ADAS Technical Responsible",
-      dateRange: "Oct 2024 - Present",
+      dateRange: "Oct 2024 - Sep 2026",
       bullets: [
         "Lead the development of the Software Architecture and Telemetry subsystems for an autonomous Formula Student race car.",
         "Coordinate software architecture decisions and technical planning within the ADAS division.",
