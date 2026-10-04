@@ -23,8 +23,8 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
               {siteConfig.experience.map((companyExperience) => (
                 <div class="relative mb-12 last:mb-0">
                   <div class="mb-5">
-                    <h3 class="text-xl sm:text-2xl font-semibold text-gray-900">
-                      <a href={companyExperience.company.url} target="_blank" rel="noopener noreferrer" class="hover:underline focus-visible:underline">
+                    <h3 class="text-xl sm:text-2xl font-semibold">
+                      <a href={companyExperience.company.url} target="_blank" rel="noopener noreferrer" class="hover:underline focus-visible:underline" style={`color: ${siteConfig.accentColor}`}>
                         {companyExperience.company.name}
                       </a>
                     </h3>
@@ -33,7 +33,7 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
                   <div class="relative border-l-2 border-gray-200 ml-2 pl-6 space-y-6">
                     {companyExperience.roles.map((role) => (
                       <div class="relative bg-white rounded-lg shadow-sm border border-gray-100 p-4 sm:p-5 md:p-6 hover:shadow-md transition-shadow duration-300">
-                        <div class="absolute -left-[33px] top-6 w-4 h-4 bg-white border-2 rounded-full" style={`border-color: ${siteConfig.accentColor}; background-color: ${siteConfig.accentColor}`} />
+                        <div class="absolute -left-[33px] top-1 w-4 h-4 bg-white border-2 rounded-full" style={`border-color: ${siteConfig.accentColor}; background-color: ${siteConfig.accentColor}`} />
                         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
                           <h4 class="text-lg sm:text-xl font-semibold text-gray-900">{role.title}</h4>
                           <span class="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-0">{role.dateRange}</span>
