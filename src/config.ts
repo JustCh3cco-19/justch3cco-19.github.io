@@ -130,56 +130,67 @@ export const siteConfig = {
   experience: [
     {
       company: companies.fastChargeEngineering,
-      title: "Software Engineer",
-      dateRange: "Mar 2026 - Present",
-      bullets: [
-        "Develop embedded software and automated testing tools for battery systems using C and Python.",
-        "Design CAN-based diagnostic, validation, and data acquisition tools for battery modules and industrial devices.",
-        "Automate production and validation workflows to reduce manual operations and improve data traceability.",
-        "Develop custom Odoo ERP modules for Manufacturing, CRM, Project Management, production tracking, and scheduling.",
-        "Maintain Linux-based development infrastructure, Docker environments, self-hosted Git services, NAS backup systems, and CI workflows.",
+      roles: [
+        {
+          title: "Software Engineer",
+          dateRange: "Mar 2026 - Present",
+          bullets: [
+            "Develop embedded software and automated testing tools for battery systems using C and Python.",
+            "Design CAN-based diagnostic, validation, and data acquisition tools for battery modules and industrial devices.",
+            "Automate production and validation workflows to reduce manual operations and improve data traceability.",
+            "Develop custom Odoo ERP modules for Manufacturing, CRM, Project Management, production tracking, and scheduling.",
+            "Maintain Linux-based development infrastructure, Docker environments, self-hosted Git services, NAS backup systems, and CI workflows.",
+          ],
+        },
       ],
     },
     {
       company: companies.sapienzaFastCharge,
-      title: "Head of Business & Management",
-      dateRange: "Sep 2025 - Present",
-      bullets: [
-        "Lead the Business & Management division, coordinating organizational, strategic, and operational activities.",
-        "Manage sponsor relationships and support the development of technical and commercial partnerships.",
-        "Contribute to project planning, resource allocation, and cross-functional team coordination.",
-      ],
-    },
-    {
-      company: companies.sapienzaFastCharge,
-      title: "Social Media Manager",
-      dateRange: "Sep 2025 - Sep 2026",
-      bullets: [
-        "Define and execute the team's communication strategy across multiple social media platforms.",
-        "Create technical and promotional content highlighting engineering achievements and competition activities.",
-        "Collaborate with sponsors and team members to improve online visibility and audience engagement.",
-      ],
-    },
-    {
-      company: companies.sapienzaFastCharge,
-      title: "ADAS Technical Responsible",
-      dateRange: "Oct 2024 - Sep 2026",
-      bullets: [
-        "Lead the development of the Software Architecture and Telemetry subsystems for an autonomous Formula Student race car.",
-        "Coordinate software architecture decisions and technical planning within the ADAS division.",
-        "Supervise the integration, testing, and validation of autonomous driving software components.",
-        "Mentor team members and promote the development of reliable, maintainable, and hardware-compatible software.",
-      ],
-    },
-    {
-      company: companies.sapienzaFastCharge,
-      title: "ADAS Software Engineer",
-      dateRange: "Oct 2023 - Oct 2024",
-      bullets: [
-        "Developed software for an autonomous Formula Student race car, contributing to control, telemetry, and system integration.",
-        "Designed and implemented ROS 2-based modular architectures for distributed communication between vehicle subsystems.",
-        "Optimized real-time software with a focus on low-latency execution, reliability, and hardware compatibility.",
-        "Deployed and validated software on NVIDIA Jetson AGX Orin, balancing computational load, communication efficiency, and safety requirements.",
+      roles: [
+        {
+          title: "Team Leader",
+          dateRange: "Oct 2026 - Present",
+          bullets: [
+          ],
+        },
+        {
+          title: "Head of Business & Management",
+          dateRange: "Sep 2025 - Oct 2026",
+          bullets: [
+            "Lead the Business & Management division, coordinating organizational, strategic, and operational activities.",
+            "Manage sponsor relationships and support the development of technical and commercial partnerships.",
+            "Contribute to project planning, resource allocation, and cross-functional team coordination.",
+          ],
+        },
+        {
+          title: "Social Media Manager",
+          dateRange: "Sep 2025 - Sep 2026",
+          bullets: [
+            "Define and execute the team's communication strategy across multiple social media platforms.",
+            "Create technical and promotional content highlighting engineering achievements and competition activities.",
+            "Collaborate with sponsors and team members to improve online visibility and audience engagement.",
+          ],
+        },
+        {
+          title: "ADAS Technical Responsible",
+          dateRange: "Oct 2024 - Sep 2026",
+          bullets: [
+            "Lead the development of the Software Architecture and Telemetry subsystems for an autonomous Formula Student race car.",
+            "Coordinate software architecture decisions and technical planning within the ADAS division.",
+            "Supervise the integration, testing, and validation of autonomous driving software components.",
+            "Mentor team members and promote the development of reliable, maintainable, and hardware-compatible software.",
+          ],
+        },
+        {
+          title: "ADAS Software Engineer",
+          dateRange: "Oct 2023 - Oct 2024",
+          bullets: [
+            "Developed software for an autonomous Formula Student race car, contributing to control, telemetry, and system integration.",
+            "Designed and implemented ROS 2-based modular architectures for distributed communication between vehicle subsystems.",
+            "Optimized real-time software with a focus on low-latency execution, reliability, and hardware compatibility.",
+            "Deployed and validated software on NVIDIA Jetson AGX Orin, balancing computational load, communication efficiency, and safety requirements.",
+          ],
+        },
       ],
     },
   ],
