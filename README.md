@@ -1,16 +1,16 @@
 # Francesco Zompanti – Personal Portfolio
 
-Welcome to my personal portfolio.
+Personal portfolio of Francesco Zompanti, Computer Science student at Sapienza University of Rome, Software Engineer at Fast Charge Engineering, and Team Leader of Sapienza Fast Charge Formula Student Electric Team.
 
-This website showcases my journey as a Software Engineer, combining professional experience in embedded systems and industrial software with my passion for autonomous vehicles, artificial intelligence, and motorsport engineering.
+This website brings together my experience in embedded systems, industrial software, autonomous vehicles, artificial intelligence, and motorsport engineering.
 
-Here you'll find the projects, technologies, and experiences that have shaped my career—from developing embedded software and automated testing tools for battery systems to building AI-powered computer vision applications and contributing to an autonomous Formula Student race car.
+It includes selected projects, technologies, and experiences: from embedded software and automated testing tools for battery systems to AI-powered computer vision applications and autonomous Formula Student racing.
 
 ---
 
 ## What You'll Find
 
-### Professional Experience
+### Experience
 
 My work spans several areas of software engineering, including:
 
@@ -20,13 +20,13 @@ My work spans several areas of software engineering, including:
 * Custom ERP development with Odoo
 * Linux infrastructure, Docker, and development workflows
 
-Alongside my professional career, I serve as the **ADAS Technical Responsible** of the **Sapienza Fast Charge Formula Student Electric Team**, leading the development of the Telemetry software for an autonomous Formula Student race car.
+Alongside my work at Fast Charge Engineering, I lead the **Sapienza Fast Charge Formula Student Electric Team**. Previously, I was ADAS Technical Responsible, contributing to the software architecture and telemetry systems of an autonomous Formula Student race car.
 
 ---
 
 ## Featured Projects
 
-This portfolio includes personal, academic, and professional-oriented projects covering:
+The portfolio includes personal, academic, and professional-oriented projects covering:
 
 * Embedded Systems
 * Artificial Intelligence
@@ -60,17 +60,15 @@ Some of the technologies I work with include:
 
 ---
 
-## Purpose
+## About This Portfolio
 
-This portfolio is more than a collection of repositories.
-
-It documents my growth as an engineer, demonstrates how I approach technical challenges, and showcases the software solutions I've built across embedded systems, artificial intelligence, industrial automation, and autonomous vehicles.
+This portfolio documents my growth as an engineer and shows how I approach technical challenges across embedded systems, artificial intelligence, industrial automation, and autonomous vehicles.
 
 I believe software engineering is about solving real-world problems through reliable, maintainable, and efficient systems.
 
 ---
 
-## Continuous Evolution
+## Keeping It Current
 
 Technology evolves quickly—and so does this portfolio.
 
