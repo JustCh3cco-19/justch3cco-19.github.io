@@ -25,8 +25,28 @@ export const siteConfig = {
     github: "https://github.com/JustCh3cco-19",
   },
 
-  aboutMe:
-    "I’m a Computer Science student at Sapienza University of Rome and currently Team Leader at Sapienza Fast Charge, the Formula Student team of Sapienza University of Rome. My experience in Formula Student has shaped the way I approach engineering: not just as a technical challenge, but as a combination of people, organization, decision-making and problem solving. Leading a multidisciplinary team has given me the opportunity to coordinate complex projects, align different technical and business areas, and work in a fast-paced environment where collaboration and execution are essential. Alongside Formula Student, I work at Fast Charge Engineering, where I develop embedded software, automated testing solutions, CAN-based diagnostic tools and custom ERP applications. This professional experience has strengthened my background in software engineering, embedded systems and industrial applications. Within Sapienza Fast Charge, before taking on the Team Leader role, I also worked on autonomous systems as ADAS Technical Responsible, contributing to the development of software architecture and telemetry systems for an autonomous Formula Student race car.I enjoy using technology as a tool to solve real-world problems rather than treating software development as an end in itself. My technical background allows me to understand engineering challenges, while my leadership experience has increasingly drawn me toward project and team management, operations and strategic decision-making. I’m particularly interested in the intersection between technology and business, and in environments where technical understanding, data and organizational decision-making come together.Motorsport is one of the fields where I see these worlds converging at their best: engineering, data, technology, operations and teamwork, all working toward a common objective.I’m always looking for opportunities to take on challenging projects, learn from ambitious people and work on problems where technology can make a tangible impact.",
+  aboutMeSections: [
+    {
+      title: "Profile",
+      text: "I’m a Computer Science student at Sapienza University of Rome and Team Leader at Sapienza Fast Charge, the university’s Formula Student team. I approach engineering as a combination of technology, people, organization, decision-making and problem solving.",
+    },
+    {
+      title: "Leadership & Management",
+      text: "Leading a multidisciplinary team has taught me how to coordinate complex projects, align technical and business areas, and work in a fast-paced environment where collaboration and execution are essential. This experience has increasingly drawn me toward project and team management, operations and strategic decision-making.",
+    },
+    {
+      title: "Professional Experience",
+      text: "At Fast Charge Engineering, I develop embedded software, automated testing solutions, CAN-based diagnostic tools and custom ERP applications. This work has strengthened my background in software engineering, embedded systems and industrial applications.",
+    },
+    {
+      title: "Autonomous Systems",
+      text: "Before taking on the Team Leader role, I worked within Sapienza Fast Charge as ADAS Technical Responsible. I contributed to the software architecture and telemetry systems of an autonomous Formula Student race car, while coordinating technical planning, integration and validation activities.",
+    },
+    {
+      title: "What Drives Me",
+      text: "I enjoy using technology to solve real-world problems rather than treating software development as an end in itself. I’m particularly interested in the intersection between technology and business, where technical understanding, data and organizational decision-making come together. Motorsport is one of the fields where I see these worlds converging at their best, and I’m always looking for challenging projects where technology can make a tangible impact.",
+    },
+  ],
 
   skills: [
     "C",

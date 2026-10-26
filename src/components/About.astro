@@ -1,9 +1,5 @@
 ---
 import { siteConfig } from "../config";
-
-const aboutMeSentences =
-  siteConfig.aboutMe.match(/[^.?!]+[.?!]/g)?.map((sentence) => sentence.trim()) ??
-  [siteConfig.aboutMe.trim()].filter(Boolean);
 ---
 
 <section id="about" class="p-8 sm:p-12 md:p-16 lg:p-24">
@@ -23,11 +19,16 @@ const aboutMeSentences =
       </div>
 
       <div class="lg:col-span-8 space-y-8">
-        <div
-          class="text-lg sm:text-xl md:text-2xl leading-relaxed text-gray-600 space-y-3"
-        >
-          {aboutMeSentences.map((sentence) => (
-            <p>{sentence}</p>
+        <div class="space-y-8">
+          {siteConfig.aboutMeSections.map((section) => (
+            <article class="border-l-2 pl-5 sm:pl-6" style={`border-color: ${siteConfig.accentColor}`}>
+              <h3 class="text-base sm:text-lg font-semibold uppercase tracking-wide text-gray-900">
+                {section.title}
+              </h3>
+              <p class="mt-2 text-base sm:text-lg md:text-xl leading-relaxed text-gray-600">
+                {section.text}
+              </p>
+            </article>
           ))}
         </div>
 
