@@ -183,15 +183,6 @@ export const siteConfig = {
           ],
         },
         {
-          title: "Social Media Manager",
-          dateRange: "Sep 2025 - Sep 2026",
-          bullets: [
-            "Define and execute the team's communication strategy across multiple social media platforms.",
-            "Create technical and promotional content highlighting engineering achievements and competition activities.",
-            "Collaborate with sponsors and team members to improve online visibility and audience engagement.",
-          ],
-        },
-        {
           title: "ADAS Technical Responsible",
           dateRange: "Oct 2024 - Sep 2026",
           bullets: [
