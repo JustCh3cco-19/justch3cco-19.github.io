@@ -39,8 +39,8 @@ export const siteConfig = {
       text: "At Fast Charge Engineering, I develop embedded software, automated testing solutions, CAN-based diagnostic tools and custom ERP applications. This work has strengthened my background in software engineering, embedded systems and industrial applications.",
     },
     {
-      title: "Autonomous Systems",
-      text: "Before taking on the Team Leader role, I worked within Sapienza Fast Charge as ADAS Technical Responsible. I contributed to the software architecture and telemetry systems of an autonomous Formula Student race car, while coordinating technical planning, integration and validation activities.",
+      title: "Autonomous System",
+      text: "Before taking on the Team Leader role, I worked within Sapienza Fast Charge as Autonomous System Technical Responsible. I contributed to the software architecture and telemetry systems of an autonomous Formula Student race car, while coordinating technical planning, integration and validation activities.",
     },
     {
       title: "What Drives Me",
@@ -183,17 +183,17 @@ export const siteConfig = {
           ],
         },
         {
-          title: "ADAS Technical Responsible",
+          title: "Autonomous System Technical Responsible",
           dateRange: "Oct 2024 - Sep 2026",
           bullets: [
             "Lead the development of the Software Architecture and Telemetry subsystems for an autonomous Formula Student race car.",
-            "Coordinate software architecture decisions and technical planning within the ADAS division.",
+            "Coordinate software architecture decisions and technical planning within the Autonomous System division.",
             "Supervise the integration, testing, and validation of autonomous driving software components.",
             "Mentor team members and promote the development of reliable, maintainable, and hardware-compatible software.",
           ],
         },
         {
-          title: "ADAS Software Engineer",
+          title: "Autonomous System Software Engineer",
           dateRange: "Oct 2023 - Oct 2024",
           bullets: [
             "Developed software for an autonomous Formula Student race car, contributing to control, telemetry, and system integration.",
