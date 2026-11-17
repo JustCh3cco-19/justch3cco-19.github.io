@@ -5,48 +5,81 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
 
 {
   hasExperience && (
-    <section id="experience" class="p-8 sm:p-12 md:p-16 lg:p-24">
-      <div>
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
-          <div class="lg:col-span-4">
-            <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
-              Experience
-            </h2>
-            <div
-              class="w-[75px] h-[5px] mt-2 rounded-full"
-              style={`background-color: ${siteConfig.accentColor}`}
-            />
-          </div>
+    <section
+      id="experience"
+      class="p-8 sm:p-12 md:p-16 lg:p-24"
+      style={`--race-accent: ${siteConfig.accentColor}`}
+      data-experience-race
+    >
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+        <div class="lg:col-span-4">
+          <h2 class="text-3xl sm:text-4xl md:text-5xl xl:text-7xl font-bold text-gray-900">
+            Experience
+          </h2>
+          <div class="w-[75px] h-[5px] mt-2 rounded-full" style={`background-color: ${siteConfig.accentColor}`} />
+        </div>
 
-          <div class="lg:col-span-8">
-            <div class="relative">
-              {siteConfig.experience.map((companyExperience) => (
-                <div class="relative mb-12 last:mb-0">
-                  <div class="mb-5">
+        <div class="lg:col-span-8">
+          <div class="experience-race">
+            <div class="race-track" data-race-track aria-hidden="true">
+              <div class="race-track__road">
+                <div class="race-track__centerline" />
+                <div class="race-track__progress" data-race-progress />
+                <div class="race-track__grid race-track__grid--start" />
+                <div class="race-track__grid race-track__grid--finish" />
+              </div>
+              <div class="race-car" data-race-car>
+                <span class="race-car__emoji">🏎️</span>
+              </div>
+            </div>
+
+            <div class="experience-entries">
+              {siteConfig.experience.map((companyExperience, companyIndex) => (
+                <div class="experience-company">
+                  <div class="experience-company__heading">
+                    <span class="experience-company__number">
+                      {String(companyIndex + 1).padStart(2, "0")}
+                    </span>
                     <h3 class="text-xl sm:text-2xl font-semibold">
-                      <a href={companyExperience.company.url} target="_blank" rel="noopener noreferrer" class="hover:underline focus-visible:underline" style={`color: ${siteConfig.accentColor}`}>
+                      <a
+                        href={companyExperience.company.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hover:underline focus-visible:underline"
+                        style={`color: ${siteConfig.accentColor}`}
+                      >
                         {companyExperience.company.name}
                       </a>
                     </h3>
                   </div>
 
-                  <div class="relative border-l-2 border-gray-200 ml-2 pl-6 space-y-6">
+                  <div class="space-y-5">
                     {companyExperience.roles.map((role) => (
-                      <div class="relative bg-white rounded-lg shadow-sm border border-gray-100 p-4 sm:p-5 md:p-6 hover:shadow-md transition-shadow duration-300">
-                        <div class="absolute -left-[33px] top-1 w-4 h-4 bg-white border-2 rounded-full" style={`border-color: ${siteConfig.accentColor}; background-color: ${siteConfig.accentColor}`} />
-                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-4">
-                          <h4 class="text-lg sm:text-xl font-semibold text-gray-900">{role.title}</h4>
-                          <span class="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-0">{role.dateRange}</span>
+                      <article
+                        class="experience-role rounded-lg bg-white border border-gray-100 p-4 sm:p-5 md:p-6 shadow-sm"
+                        data-race-role
+                      >
+                        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4 mb-4">
+                          <h4 class="text-lg sm:text-xl font-semibold text-gray-900">
+                            {role.title}
+                          </h4>
+                          <span class="text-xs sm:text-sm text-gray-500 shrink-0">
+                            {role.dateRange}
+                          </span>
                         </div>
-                        <ul class="space-y-2">
-                          {role.bullets.map((bullet) => (
-                            <li class="flex items-start">
-                              <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 flex-shrink-0" />
-                              <span class="text-sm sm:text-base text-gray-600">{bullet}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                        {role.bullets.length > 0 && (
+                          <ul class="space-y-2">
+                            {role.bullets.map((bullet) => (
+                              <li class="flex items-start">
+                                <span class="inline-block w-1.5 h-1.5 rounded-full bg-gray-400 mt-2 mr-3 shrink-0" />
+                                <span class="text-sm sm:text-base text-gray-600">
+                                  {bullet}
+                                </span>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </article>
                     ))}
                   </div>
                 </div>
@@ -58,3 +91,191 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
     </section>
   )
 }
+
+<style>
+  .experience-race {
+    --track-width: 68px;
+    --track-gap: 28px;
+    position: relative;
+  }
+
+  .experience-entries {
+    padding-left: calc(var(--track-width) + var(--track-gap));
+  }
+
+  .experience-company + .experience-company { margin-top: 3rem; }
+
+  .experience-company__heading {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .experience-company__number {
+    color: var(--race-accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+  }
+
+  .race-track {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: var(--track-width);
+    pointer-events: none;
+  }
+
+  .race-track__road {
+    position: absolute;
+    inset: 0 8px;
+    overflow: hidden;
+    border-radius: 10px;
+    background:
+      repeating-linear-gradient(155deg, transparent 0 14px, rgb(255 255 255 / 2%) 14px 16px),
+      #292d31;
+    box-shadow: 0 0 0 1px #d6d6d6, 0 5px 18px rgb(0 0 0 / 10%);
+  }
+
+  .race-track__road::before,
+  .race-track__road::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: repeating-linear-gradient(to bottom, #fff 0 18px, var(--race-accent) 18px 36px);
+  }
+
+  .race-track__road::before { left: 0; }
+  .race-track__road::after { right: 0; }
+
+  .race-track__centerline {
+    position: absolute;
+    inset: 0 auto 0 50%;
+    width: 2px;
+    transform: translateX(-50%);
+    background: repeating-linear-gradient(to bottom, #f5f0d8 0 20px, transparent 20px 38px);
+    opacity: 0.7;
+  }
+
+  .race-track__progress {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+    width: 4px;
+    height: 0;
+    transform: translateX(-50%);
+    border-radius: 999px;
+    background: var(--race-accent);
+    box-shadow: 0 0 12px var(--race-accent);
+  }
+
+  .race-track__grid {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    height: 12px;
+    background-color: white;
+    background-image: conic-gradient(#252525 25%, transparent 0 50%, #252525 0 75%, transparent 0);
+    background-size: 12px 12px;
+  }
+
+  .race-track__grid--start { top: 4px; }
+  .race-track__grid--finish { bottom: 4px; }
+
+  .race-car {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 50%;
+    display: grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    border: 2px solid white;
+    border-radius: 50%;
+    background: var(--race-accent);
+    box-shadow: 0 4px 14px rgb(0 0 0 / 28%);
+    transform: translate3d(-50%, var(--car-y, 0px), 0);
+    will-change: transform;
+  }
+
+  .race-car__emoji {
+    display: block;
+    font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+    font-size: 31px;
+    line-height: 1;
+    transform: rotate(90deg);
+  }
+
+  .experience-role {
+    transition: border-color 200ms ease, box-shadow 200ms ease, transform 200ms ease;
+  }
+
+  .experience-role:hover,
+  .experience-role.is-current {
+    border-color: var(--race-accent);
+    box-shadow: 0 8px 24px rgb(0 0 0 / 9%);
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 639px) {
+    .experience-race {
+      --track-width: 48px;
+      --track-gap: 15px;
+    }
+
+    .race-track__road { inset-inline: 5px; }
+    .race-car { width: 44px; height: 44px; }
+    .race-car__emoji { font-size: 25px; }
+    .experience-company__heading { flex-wrap: wrap; gap: 0.25rem 0.5rem; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .race-car { will-change: auto; }
+    .experience-role { transition: none; }
+  }
+</style>
+
+<script>
+  const section = document.querySelector<HTMLElement>("[data-experience-race]");
+  const track = section?.querySelector<HTMLElement>("[data-race-track]");
+  const car = section?.querySelector<HTMLElement>("[data-race-car]");
+  const progressLine = section?.querySelector<HTMLElement>("[data-race-progress]");
+  const roles = Array.from(section?.querySelectorAll<HTMLElement>("[data-race-role]") ?? []);
+
+  if (track && car && progressLine && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    let frame = 0;
+
+    const updateRace = () => {
+      frame = 0;
+      const rect = track.getBoundingClientRect();
+      const marker = window.innerHeight * 0.55;
+      const travel = Math.max(0, rect.height - car.offsetHeight);
+      const fraction = Math.max(0, Math.min(1, (marker - rect.top) / rect.height));
+      const position = fraction * travel;
+
+      car.style.setProperty("--car-y", `${position}px`);
+      progressLine.style.height = `${position + car.offsetHeight / 2}px`;
+
+      let currentRole: HTMLElement | undefined;
+      for (const role of roles) {
+        if (role.getBoundingClientRect().top <= marker) currentRole = role;
+      }
+      for (const role of roles) role.classList.toggle("is-current", role === currentRole);
+    };
+
+    const scheduleUpdate = () => {
+      if (!frame) frame = requestAnimationFrame(updateRace);
+    };
+
+    window.addEventListener("scroll", scheduleUpdate, { passive: true });
+    window.addEventListener("resize", scheduleUpdate);
+    new ResizeObserver(scheduleUpdate).observe(track);
+    scheduleUpdate();
+  }
+</script>
